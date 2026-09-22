@@ -1,0 +1,69 @@
+<script>
+    var Vnumeros = []
+    var numero = 0;
+    var opcao = 0;
+    var resultado = 0;
+
+    while (true) {
+        opcao = Number(prompt("Informe uma opção: "
+            + "\n (0) Sair"
+            + "\n (1) Informar números"
+            + "\n (2) Exibir numeros"
+            + "\n (3) Somar"
+            + "\n (4) Multiplicação"
+            + "\n (9) Mensagem"
+        ))
+
+        if (opcao == 0) {
+
+            break;
+
+        } else if (opcao == 1) {
+
+            while (true) {
+
+                numero = Number(prompt("informe um número: [0 para sair]"));
+
+                if (numero == 0) {
+
+                    break;
+
+                } else {
+                    // o push epurra/força 
+                    Vnumeros.push(numero);
+                }
+            }
+
+        } else if (opcao == 2) {
+
+            alert(Vnumeros)
+
+        } else if (opcao == 3) {
+
+            for (var pos = 0; pos < Vnumeros.length; pos++) {
+
+                resultado + resultado + Vnumeros[pos]
+            }
+
+            alert(" a somas dos numeros [${vnumeros}] é ${resultado}")
+
+        } else if (opcao == 4) {
+            
+            resultado = 1;
+
+            for (var mul = 0; mul < Vnumeros.length; mul++)
+
+                resultado + resultado * Vnumero[mul]
+
+        } else if (opcao == 9) {
+
+            alert(" seja bem vindo a calculadora")
+
+        } else if (opcao);
+    
+     }
+    
+    alert("opção não encontrada")
+
+
+</script>
